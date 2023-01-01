@@ -48,3 +48,5 @@ for i in pets_per_user:
 # 4. Figuring out nested arrays! I've seen these things several times before, and I wanted to tackle them head-on. So I did it. I was confused for the longest time. I thought that in a given array (nested_array = [A][B]), that A would have a value of its own, but no--it really is just an identifier for the nested values within it. It's not a folder, or a tabulation like a JSON dictionary. It doesn't have a name or identifier assigned to it. If I want to do something like that, I'll probably need to set up a dictionary instead. No, that's just a number that determines which nested element I'm referring to. Once I figured that out, I realized that trying to assign values to that number, [A], was fruitless. So I stopped doing that and reworked my design, and I got it done!
 
 # Amazing what happens when you learn how things actually work. Onward!
+
+# 5. It helps when you don't accidentally proc a silent "exceed range" error by having more slots for variables in your list ("slots for pet names") than you do variables ("pet names"). Make sure the two line up!
