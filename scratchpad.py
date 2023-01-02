@@ -1,10 +1,11 @@
-from datetime import datetime
+list = [1, 2, 3, 4, 5, 6]
+list_segment = []
 
-# Getting the current date and time
-dt = datetime.now()
-
-# getting the timestamp
-ts = datetime.timestamp(dt)
-
-print("Date and time is:", dt)
-print("Timestamp is:", ts)
+for item in list:
+    if len(list_segment) < 2:
+        list_segment.append(item)
+    else:
+        list_segment = []
+        list_segment.append(item)
+    if len(list_segment) == 2:
+        print(list_segment)
