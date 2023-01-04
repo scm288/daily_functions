@@ -40,3 +40,9 @@ sorted_list = sorted(counted_list, key=lambda x: x['count'], reverse=True)
 print(sorted_list)
 
 # This solution was created by ChatGPT. After busting my brain trying to figure this problem out on my own, I ended up turning to the AI to see what it would do. And what do you know? It is elegant, persuasive, and succinct.
+
+# Amazing. It really is amazing what happens when you just, I don't know, fix that one error that has brought down the entire machine. And what an error! I just learned that merely calling a function does nothing, especially if the returned result isn't assigned to any sort of variable. No wonder my sorting code wasn't doing anything! The count_words() function call didn't get utilized or called upon at all!
+
+# But fixing that--that one thing--made the result possible, something I'd slaved over for the past couple of days. And now I did it. And I danced and jumped up and down, ecstatically. There is no rush quite like figuring something out.
+
+# Man. I could get used to this feeling.
