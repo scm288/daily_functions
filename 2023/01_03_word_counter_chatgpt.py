@@ -29,9 +29,14 @@ with open("2023_data/dc_ch_1.txt") as reader:
         for word in line.split():
             word_list.append(word)
 
-count_words(word_list)
+# MAKE SURE THAT FUNCTION RESULTS ARE ASSIGNED TO VARIABLES LOL
+counted_list = count_words(word_list)
 
-sorted_list = sorted(word_list, key=itemgetter(1), reverse=True)
+# for item in counted_list:
+#     if item['count'] == False:
+#         item.pop()
+
+sorted_list = sorted(counted_list, key=lambda x: x['count'], reverse=True)
 print(sorted_list)
 
 # This solution was created by ChatGPT. After busting my brain trying to figure this problem out on my own, I ended up turning to the AI to see what it would do. And what do you know? It is elegant, persuasive, and succinct.
