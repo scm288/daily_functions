@@ -38,4 +38,5 @@ counted_list = count_words(word_list)
 sorted_list = sorted(counted_list, key=lambda x: x['count'], reverse=True)
 print(sorted_list)
 
-sorted_list = open("2023_data/text_output_test.txt", 'w')
+with open("2023_data/text_output_test.txt", 'w') as output_file:
+    output_file.write(f"{sorted_list}")
