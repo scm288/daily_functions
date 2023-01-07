@@ -45,24 +45,22 @@ answer_2 = input("Please enter another number: ")
 
 answer_comp = Comparator(int(answer_1), int(answer_2))
 
-print(answer_comp.a)
-print(answer_comp.b)
-print(answer_comp.is_equal_to)
+found_relationship = False
+while found_relationship == False:
+    answer = ""
+    if answer_comp.is_greater_than() == True:
+        answer = f"{answer_comp.a} is greater than {answer_comp.b}"
+        found_relationship = True
+        break
+    elif answer_comp.is_less_than() == True:
+        answer = f"{answer_comp.a} is less than {answer_comp.b}"
+        found_relationship = True
+        break
+    elif answer_comp.is_equal_to() == True:
+        answer = f"{answer_comp.a} is equal to {answer_comp.b}"
+        found_relationship = True
+        break
 
-# found_relationship = False
-# while found_relationship == False:
-#     answer = ""
-#     if answer_comp.is_greater_than == True:
-#         answer = f"{answer_comp.a} is greater than {answer_comp.b}"
-#         found_relationship = True
-#         break
-#     elif answer_comp.is_less_than == True:
-#         answer = f"{answer_comp.a} is less than {answer_comp.b}"
-#         found_relationship = True
-#         break
-#     elif answer_comp.is_equal_to == True:
-#         answer = f"{answer_comp.a} is equal to {answer_comp.b}"
-#         found_relationship = True
-#         break
+print(answer)
 
-# print(answer)
+# Lesson learned -- don't forget to call functions using parentheses!!
